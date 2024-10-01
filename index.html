@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .tutorial-section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #0066cc;
+        }
+        .example {
+            background-color: #e6f3ff;
+            padding: 10px;
+            border-left: 5px solid #0066cc;
+            margin: 10px 0;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        .button-container button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            background-color: #0066cc;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #005bb5;
+        }
+        .styled-text {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .code-display {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap; /* Ensures code wraps */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tutorials</h1>
+
+    <div class="tutorial-section">
+        <h2>Basic HTML Structure</h2>
+        <p>Here's the basic structure of an HTML document:</p>
+        <div class="example">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Your Main Heading&lt;/h1&gt;
+    &lt;p&gt;Your content goes here.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Formatting Elements</h2>
+        <p>HTML provides various formatting elements:</p>
+        <ul>
+            <li><strong>Bold</strong>: &lt;b&gt;Bold text&lt;/b&gt;</li>
+            <li><em>Italic</em>: &lt;i&gt;Italic text&lt;/i&gt;</li>
+            <li><mark>Marked</mark>: &lt;mark&gt;Marked text&lt;/mark&gt;</li>
+        </ul>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Styling with CSS</h2>
+        <p>You can style your HTML elements using CSS:</p>
+        <div class="example">
+            <p style="background-color: #ffcccc; color: #990000; font-family: 'Courier New', monospace; font-size: 18px; text-align: center;">
+                This text has custom styling!
+            </p>
+        </div>
+        <p>The above example uses inline CSS. Here's the code:</p>
+        <pre>
+&lt;p style="background-color: #ffcccc; color: #990000; font-family: 'Courier New', monospace; font-size: 18px; text-align: center;"&gt;
+    This text has custom styling!
+&lt;/p&gt;
+        </pre>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Interactive Styling</h2>
+        <p>Click the buttons below to apply different inline styles to the text:</p>
+        <div class="button-container">
+            <button onclick="applyStyle('', 'Normal')">Normal</button>
+            <button onclick="applyStyle('background-color: #ffcccc; color: #990000; font-family: Courier New, monospace; font-size: 18px; text-align: center;', 'Style 1')">Style 1</button>
+            <button onclick="applyStyle('background-color: #ccffcc; color: #006600; font-family: Arial, sans-serif; font-size: 16px; text-align: left;', 'Style 2')">Style 2</button>
+            <button onclick="applyStyle('background-color: #ccccff; color: #000099; font-family: Times New Roman, serif; font-size: 20px; text-align: right;', 'Style 3')">Style 3</button>
+            <button onclick="applyStyle('background-color: #ffffcc; color: #999900; font-family: Verdana, sans-serif; font-size: 14px; text-align: justify;', 'Style 4')">Style 4</button>
+            <button onclick="applyStyle('background-color: #ffccff; color: #990099; font-family: Georgia, serif; font-size: 22px; text-align: left;', 'Style 5')">Style 5</button>
+            
+        </div>
+        <p class="styled-text" id="styledText">This text will change style!</p>
+        <div class="code-display" id="codeDisplay">
+            <pre><code id="codeContent"><p style="...">This text will change style!</p></code></pre>
+        </div>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Comments</h2>
+        <p>You can add comments in HTML that won't be displayed in the browser:</p>
+        <div class="example">
+            &lt;!-- This is a comment --&gt;
+        </div>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Images</h2>
+        <p>You can add images to your HTML and specify their dimensions:</p>
+        <div class="example">
+            <img src="https://static.wikia.nocookie.net/prowrestling/images/a/ad/Wwe_the_rock_png_by_double_a1698_day9ylt-pre_%281%29.png/revision/latest?cb=20190225014047" alt="Placeholder Image" width="300" height="200">
+        </div>
+        <p>Here's the code for the above image:</p>
+        <pre>
+&lt;img src="https://static.wikia.nocookie.net/prowrestling/images/a/ad/Wwe_the_rock_png_by_double_a1698_day9ylt-pre_%281%29.png/revision/latest?cb=20190225014047" alt="Placeholder Image" width="300" height="200"&gt;
+        </pre>
+    </div>
+
+    <script>
+        function applyStyle(style, styleName) {
+            const styledText = document.getElementById('styledText');
+            styledText.style.cssText = style;
+
+            const codeContent = document.getElementById('codeContent');
+            if (style) {
+                codeContent.textContent = `<p style="${style}">This text will change style!</p>`;
+            } else {
+                codeContent.textContent = `<p>This text will change style!</p>`;
+            }
+        }
+    </script>
+
+</body>
+</html>
