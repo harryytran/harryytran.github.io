@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.tutorial-section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+.example {
+    background-color: #e6f3ff;
+    padding: 10px;
+    border-left: 5px solid #0066cc;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.button-container button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #005bb5;
+}
+
+.styled-text {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.code-display {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}

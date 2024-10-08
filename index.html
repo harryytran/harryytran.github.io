@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tutorials</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -159,6 +160,43 @@
         <pre>
 &lt;img src="therock.png" alt="Placeholder Image" width="300" height="200"&gt;
         </pre>
+    </div>
+
+    <div class="tutorial-section">
+        <h2>Setting Up a CSS File</h2>
+        <p>Instead of using inline styles, it's often better to use an external CSS file:</p>
+        <ol>
+            <li>Create a new file named <code>styles.css</code> in the same directory as your HTML file.</li>
+            <li>Link the CSS file in your HTML's <code>&lt;head&gt;</code> section:</li>
+        </ol>
+        <div class="example">
+            <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+        </div>
+        <p>Example content for <code>styles.css</code>:</p>
+        <div class="example">
+            <pre>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.example {
+    background-color: #e6f3ff;
+    padding: 10px;
+    border-left: 5px solid #0066cc;
+    margin: 10px 0;
+}
+            </pre>
+        </div>
+        <p>Using an external CSS file helps separate structure (HTML) from presentation (CSS), making your code more maintainable.</p>
     </div>
 
     <script>
