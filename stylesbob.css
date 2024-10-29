@@ -1,0 +1,11 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/59cc5e2132601e71f0d04b1f/1515124197651-EE23KFM28JLY9EN9X5K1/mexico-current-flag-karina-mora-prints.svg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+}
